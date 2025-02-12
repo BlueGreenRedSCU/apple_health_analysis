@@ -3,11 +3,10 @@
 # -- coding: utf-8 --
 # @Time : 2025/2/12 2:54 PM
 # @Author : ritong.lan
-# @File : analyze_hilking.py
+# @File : analyze_hilking_mac.py
 
 import re
 from datetime import datetime
-import zhplot
 import matplotlib.pyplot as plt
 
 plt.rcParams['font.sans-serif'] = ['Songti']  # 使用黑体
@@ -78,5 +77,5 @@ def draw_plot_for_time_and_elevation(time, elevation, ele_increase, ele_decrease
 
 
 if __name__ == "__main__":
-    file_path = "/Users/ritong.lan/PycharmProjects/apple_health_analysis/activity_data/route_2025-02-01_3.22pm.gpx"
+    file_path = "./activity_data/route_2025-02-01_3.22pm.gpx"
     main(file_path)
